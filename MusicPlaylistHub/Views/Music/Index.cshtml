@@ -1,0 +1,43 @@
+﻿@model List<MusicPlaylistHub.Models.Song>
+
+@{
+    ViewData["Title"] = "Music Playlist";
+}
+
+<h2>Music Playlist</h2>
+<br />
+<br />
+
+<a href="@Url.Action("Create", "Music")" class="btn btn-primary">Add Song</a>
+<a href="@Url.Action("Remove", "Music")" class="btn btn-danger" style="margin-left: 10px;">Remove Song</a>
+<br />
+<br />
+
+@if (Model == null || !Model.Any())
+{
+    <p>No songs found. Please check the API.</p>
+}
+else
+{
+    <div class="row">
+        @foreach (var song in Model)
+        {
+            if (song != null)
+            {
+                <div class="col-md-4">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title">@song.id </h5>
+                            <p class="card-text">
+                                <strong>Title:</strong> @song.title <br />
+                                <strong>Artist:</strong> @song.artist <br />
+                                <strong>Album:</strong> @song.album <br />
+                                <strong>Duration:</strong> @song.duration
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            }
+        }
+    </div>
+}

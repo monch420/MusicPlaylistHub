@@ -1,0 +1,52 @@
+body {
+    background-color: #2B2B2B;
+    color: #D3D3D3;
+    font-family: 'Arial', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    color: #E0E0E0;
+}
+
+a.btn-primary, a.btn-secondary, button.btn-primary {
+    background-color: #3C3C3C;
+    border-color: #5A5A5A;
+    color: #E0E0E0;
+}
+
+    a.btn-primary:hover, a.btn-secondary:hover, button.btn-primary:hover {
+        background-color: #5A5A5A;
+        color: #ffffff;
+    }
+
+.form-control {
+    background-color: #3A3A3A;
+    border-color: #5A5A5A;
+    color: #D3D3D3;
+}
+
+    .form-control:focus {
+        background-color: #4A4A4A;
+        color: #E0E0E0;
+    }
+
+.card {
+    background-color: #3A3A3A;
+    border: 1px solid #5A5A5A;
+}
+
+.card-body {
+    color: #D3D3D3;
+}
+
+.alert-danger {
+    background-color: #A52A2A;
+    color: #ffffff;
+}
+
+pre {
+    background-color: #4A4A4A;
+    color: #E0E0E0;
+    padding: 10px;
+    border-radius: 5px;
+}

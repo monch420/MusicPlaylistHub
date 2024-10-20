@@ -1,0 +1,19 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <img src="~/images/logo.png" alt="Music Playlist Hub Logo" class="logo" /> 
+    <h1 class="display-4">Welcome to Music Playlist Hub</h1> <br /><br /><br />
+
+    <a class="btn btn-primary" href="@Url.Action("Index", "Music")">Go to Music Playlist</a>
+    <br /><br />
+    <a class="btn btn-secondary" href="@Url.Action("SearchLyrics", "Music")">Search song lyrics (Public API)</a>
+</div>
+
+<style>
+    .logo {
+        width: 150px;
+        margin-bottom: 20px;
+    }
+</style>
